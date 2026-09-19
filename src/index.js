@@ -26,7 +26,7 @@ function getSpecialDateCopy(now) {
 	const sevenDaysLater = new Date(now);
 	sevenDaysLater.setUTCDate(sevenDaysLater.getUTCDate() + 7);
 
-	return `您好，您于${formatDate(sevenDaysLater)}购买的“ 穿越回五一前 ”套餐已经生效。 现在是${formatDate(now)}，由于本公司的服务发生偏差导致您多回了7天，对于这多余的天数本公司需要向您收取额外的手续费，总共50元整。 请您及时缴纳，祝您生活愉快，享受马上到来的五一假期！`;
+	return `您好，您于${formatDate(sevenDaysLater)}购买的“穿越回一周前”套餐已经生效，现在是${formatDate(now)}。现向您收取小费，总共50元整。请您及时缴纳，祝您生活愉快！`;
 }
 
 function getGaokaoCopy(now) {
