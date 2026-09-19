@@ -60,7 +60,9 @@ function randomItem(array) {
 }
 
 function getRandomCopy(now) {
-	switch (randomItem(COPYWRITES)) {
+	const copy = randomItem(COPYWRITES);
+
+	switch (copy) {
 		case "SPECIAL_DATE":
 			return getSpecialDateCopy(now);
 
@@ -68,7 +70,7 @@ function getRandomCopy(now) {
 			return getGaokaoCopy(now);
 
 		default:
-			return randomItem(COPYWRITES);
+			return copy;
 	}
 }
 
